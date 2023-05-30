@@ -16,3 +16,11 @@ Rock-Paper-Scissors is a game in which each player simultaneously shows one of t
  To establish the winner, a get_winner function is defined. Several if-elif-else statements are created to so that a clear winner of the game is ascertained. The function also prints the outcome, 'You win', 'You lost', 'It's a tie'.
 
  To run the whole code together, the class variable by the name play is assigned. The three instances of the class are then called.
+
+ ## Milestone 5
+ Code for the game has been created using the class called CameraRockPaperScissors. The get_prediction function is used to capture and return the closest possible prediction of the user's action between rock, paper or scissors.
+ The get_user_choice function then make use of the returned value from the get_prediction function to create and return the user_choice. A while loop is used to check for valid user input in case 'nothing' is provided by the user.
+ The get_winner function determines the winner of a round by taking in user_choice and computer_choice as arguments. The computer_choice variable is obtained by the use if imported random module to choose between rock, paper and scissors. The use of random module reduces any computer choice biases when playing the game. Should the user and computer choose the same action, a "Tie" is returned, otherwise either "User" or "Computer" is returned.
+ A countdown function is created so that there is a three second countdown before the start of every round. To effectively code the countdown function, the time module is imported and the start_time variable is set to time.time(). The countdown is also printed to prompt the user to start playing.
+ The play function is coded so that the game is played. The user_wins and computer_wins variables are initially set to zero. A while loop is used to set the winning total score. Inside this while loop, the user press 'Enter' to start the game. Once the the winning score has been attained, the function prints the winner.
+
